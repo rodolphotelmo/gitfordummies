@@ -23,13 +23,29 @@
             <code>$ git diff</code><br />
             <code>$ git add ARQUIVO</code><br />
             <code>$ git push origin main</code>
-        <li>Adicionando issues<li>
-	    <code>Clonar o repositório com o "fork"</code>
-	    <code>Vincular o repositório com o comando "remote"</code>
-	    <code>$ git checkout origin/main</code>
-	    <code>$ git pull</code><br />
-        <li>Comandos 3</li>
-            <code>$ git commit -m "Mensagem do Commit" </code><br />
+        <li>Trabalhando com repositórios de terceiros
+            <ol>
+                <li>Clonar o repositório com o "fork"</li>
+                <li>Criar um diretório local para o projeto que irá clonar</li>
+                <li>inicializa repositório para trabalhar com o git: <code>$ git init</code></li>
+                <li>Vincular o repositório com o comando "remote"</li>
+                <li><code>$ git remote add main [url.repositório]</code> main é o local que direciona ao repositório</li>
+                <li>Selecionar o Branch: <code>git checkout main main</code></li>
+                <li>Baixar o repositório: <code>$ git pull</code></li>
+                <li>Nesse ponto estamos pronto para trabalhar com o código desse projeto</li>
+            </ol> 
+        </li>             
+        <li>Modificando o projeto e enviando nossas alterações
+            <ol>
+                <li>Editar o código</li>
+                <li>Verificar status do projeto <code>$ git status</code></li>
+                <li>Selecionar arquivos para serem comitados <code>$ git add [lista de arquivos separados]</code></li>
+                <li>Comitar os arquivos <code>$ git commit -m "Mensagem do Commit" </code></li>
+                
+            </ol>
+        </li>
+
+            
             <code>$ git log --oneline </code>
             <code>$ git rebase -i HEAD~3</code>
     </ol>
